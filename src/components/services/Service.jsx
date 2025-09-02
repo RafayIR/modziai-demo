@@ -40,7 +40,7 @@ export function Integrations() {
           </div>
 
           {/* Integration cards */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 justify-between mx-auto w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 grid-cols-2 md:gap-3 justify-between mx-auto w-full max-w-5xl">
             {integrations.map((integration, i) => (
               <div
                 key={i}

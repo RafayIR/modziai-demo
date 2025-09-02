@@ -1,0 +1,61 @@
+@media screen and (max-width:768px) {
+  .header-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 0, 40, 0.6);
+    /* dark bluish purple tint */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 40;
+    /* just below sidebar */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+
+  .header-wrapper {
+    .header-mobile {
+      position: fixed;
+      z-index: 50;
+      left: 0;
+      top: 0;
+      height: 100%;
+      min-width: 340px;
+      max-width: 340px;
+      transition: 0.5s ease all;
+      transform: translateX(-100%);
+
+      background: rgba(30, 0, 60, 0.5);
+      /* purplish translucent */
+      backdrop-filter: blur(16px);
+      /* blur effect */
+      -webkit-backdrop-filter: blur(16px);
+      /* Safari support */
+
+      transition: 0.5s ease all;
+      transform: translateX(-100%);
+      /* keep above content */
+    }
+
+    .right-btn-wrapper {
+
+      button {
+        padding-inline: 0;
+      }
+    }
+
+    .header-fixed {
+      transform: translateX(0);
+      transition: 0.5s ease all;
+    }
+  }
+}

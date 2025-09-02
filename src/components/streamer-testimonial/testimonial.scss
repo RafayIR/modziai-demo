@@ -111,3 +111,18 @@
     }
   }
 }
+
+@media screen and (max-width : 768px) {
+
+  .card-border {
+
+    &.card-border-animated {
+      width: 100%;
+    }
+
+    .card-title {
+      font-size: 26px;
+      line-height: normal;
+    }
+  }
+}

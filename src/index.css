@@ -52,3 +52,12 @@ body {
   backdrop-filter: blur(7.5px);
   border-radius: 18px;
 }
+
+@media screen and (max-width:768px) {
+
+  .feature-wrapper .modzi-subheading {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+}

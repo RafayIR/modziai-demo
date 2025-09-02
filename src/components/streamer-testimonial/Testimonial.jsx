@@ -45,7 +45,7 @@ export function StreamerTestimonials() {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+        <div className="grid gap-2 md:grid-cols-2 max-w-4xl mx-auto">
           {testimonials.map((item, i) => (
             <div
               key={i}
@@ -58,7 +58,7 @@ export function StreamerTestimonials() {
               )}
 
               {/* Normal text or checklist */}
-              {item.text && <p className="text-[34px] font-medium leading-[42px] mb-4">{item.text}</p>}
+              {item.text && <p className="md:text-[34px] text-[20px] font-medium md:leading-[42px] mb-4">{item.text}</p>}
 
 
               {item.checklist && (
@@ -66,7 +66,7 @@ export function StreamerTestimonials() {
                   {item.checklist.map((point, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       {/* <FaCheckCircle className="text-green-400" /> */}
-                      <span className='text-[34px] font-medium leading-[42px]'>{point}</span>
+                      <span className='md:text-[34px] text-[20px] font-medium md:leading-[42px]'>{point}</span>
                     </li>
                   ))}
                 </ul>

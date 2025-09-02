@@ -4,13 +4,13 @@ import './herosection.scss';
 
 export function HeroSection() {
   return (
-    <section className="banner-section relative z-10 py-20">
+    <section className="banner-section relative z-10 md:py-20 py-10">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-[62px] font-bold text-balance">
+              <h1 className="text-[50px] lg:text-[62px] font-bold leading-[50px] text-balance">
                 <span className="modzi-heading">ModziAI. </span>
                 <span className="text-white">Your Smartest Mod Yet</span>
               </h1>
@@ -20,8 +20,8 @@ export function HeroSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="try-free-btn hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 text-lg cursor-pointer">
+            <div className="flex flex-row gap-4">
+              <Button className="try-free-btn w-auto hover:from-purple-700 hover:to-pink-700 text-white md:px-6 py-3 md:text-lg cursor-pointer">
                 Try for Free
                 <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21.3561 38.3297C30.7652 38.3297 38.3908 30.7029 38.3908 21.295C38.3908 11.8871 30.7652 4.26019 21.3561 4.26019C11.9482 4.26019 4.32129 11.8871 4.32129
@@ -31,7 +31,7 @@ export function HeroSection() {
                 </svg>
               </Button>
               <Button
-                variant="outline" className="see-feature hover:bg-blue-500/10 px-6 py-3 text-lg  text-white bg-transparent cursor-pointer">
+                variant="outline" className="see-feature hover:bg-blue-500/10 md:px-6 py-3 text-lg  text-white bg-transparent cursor-pointer">
                 See Features
               </Button>
             </div>
